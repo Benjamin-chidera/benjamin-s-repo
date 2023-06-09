@@ -1,0 +1,90 @@
+.navbar-nav a {
+  text-transform: capitalize;
+  font-weight: 500;
+  border: 1px solid;
+  margin-right: 10px;
+  padding-left: 10px;
+}
+
+.button{
+  padding: 3px 20px;
+  border: 1px solid green;
+  margin-top: 10px;
+  text-decoration: none;
+  color: white;
+  background: linear-gradient(45deg, green,white);
+  font-weight: bold;
+}
+
+.pos{
+  height: 30%;
+  width: 100%;
+}
+
+@media(max-width:991px){
+  .pos {
+      height: 20% !important;
+     
+    }
+
+    #pos{
+      width: 50% !important;
+    }
+}
+
+.trans{
+  width: 40%;
+}
+
+input {
+  background-color: rgba(0, 128, 0, 0.288);
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+}
+
+::placeholder {
+  color: rgba(0, 128, 0, 0.521);
+}
+
+textarea {
+  background-color: rgba(0, 128, 0, 0.288);
+  border: none;
+  border-radius: 5px;
+  padding-top: 10px;
+  outline: none;
+  color: white;
+  padding-left: 10px;
+}
+
+#message {
+  resize: none;
+}
+
+@media(min-width:768px) {
+  #name {
+    width: 50%;
+  }
+}
+
+@media(max-width:660px){
+  .payment{
+    width: 50% !important;
+  }
+}
+
+@media(min-width:992px) {
+  .one {
+      transition: .6s;
+    }
+  
+    .one:hover {
+      transform: scale(1.1);
+      cursor: pointer;
+      transition: .5s;
+    }
+}

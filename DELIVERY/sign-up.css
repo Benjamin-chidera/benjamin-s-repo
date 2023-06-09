@@ -1,0 +1,10 @@
+*{
+  padding: o;
+  margin: 0;
+}
+
+span{
+  font-weight: bold;
+  text-transform: capitalize;
+  color: rgb(76, 189, 76);
+}
