@@ -1,0 +1,721 @@
+/* all these are for the navbar */
+
+.navbars {
+  /* background-color: black; */
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbars a {
+  text-decoration: none;
+  color: rgb(253, 211, 211);
+}
+
+#info a {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+#menus {
+  display: flex;
+  align-items: center;
+}
+
+#menus a {
+  margin-right: 40px;
+}
+
+.mobile-navbar {
+  overflow: hidden;
+  position: relative;
+  /* background-color: black; */
+   background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+}
+
+.mobile-navbar #links {
+  display: none;
+  padding-top: 10px;
+}
+
+.mobile-navbar a {
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  color: white;
+}
+
+.mobile-navbar .menu-open {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  color: white;
+}
+
+.mobile-navbar .fa-magnifying-glass {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30%;
+  font-size: 20px;
+}
+
+.near:hover{
+  text-decoration: underline !important;
+}
+
+@media (min-width: 817px) {
+  .mobile-navbar {
+    display: none !important;
+  }
+
+  #menu-dropdown {
+    display: none;
+  }
+}
+
+#typex {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPad {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPhone {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-support {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-wheretobuy {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+.explore-mac {
+  margin-left: 130px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.explore-mac a {
+  text-decoration: none;
+  color: white;
+}
+
+/* this is the navbar for mobile device  */
+.navbar-mobile a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-mobile {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute; */
+  width: 100%;
+}
+/* this is the navbar for mobile device  */
+
+@media (max-width: 816px) {
+  .navbars {
+    display: none;
+  }
+}
+
+.inside-menu {
+  margin-left: 70px !important;
+  margin-top: 40px;
+}
+
+.inside-menu a {
+  text-decoration: none;
+  color: white;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#menu-dropdown {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: none;
+  top: 0;
+}
+
+.fa-bars {
+  font-size: 30px !important;
+}
+
+.fa-x {
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.more-of-mac {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.more-of-mac a {
+  text-decoration: none;
+  color: white;
+}
+
+.more-of-mac a:hover {
+  color: rgb(212, 181, 181);
+}
+
+/* all these are for the navbar */
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+
+.main-pic {
+  width: 80%;
+  max-width: 100%;
+}
+
+@media (max-width: 600px) {
+  .pro h1 {
+    font-size: 30px !important;
+  }
+
+  .right p {
+    display: none;
+  }
+  .tech {
+    display: none;
+  }
+}
+
+.store {
+  background-color: rgb(160, 160, 209);
+  border-radius: 7px;
+  margin-bottom: 20px;
+  width: 100px;
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  max-width: 100%;
+}
+
+.stores {
+  text-decoration: none;
+  font-weight: 800;
+  background-color: rgb(150, 150, 212);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden !important;
+}
+
+@media (max-width: 734px) {
+  .mobile-size {
+    display: block !important;
+  }
+
+  .desktop-size {
+    display: none;
+  }
+
+  .display-on {
+    font-size: 20px !important;
+    max-width: 200px !important;
+  }
+
+  .on-display {
+    width: 50%;
+  }
+
+  .zoom-pic {
+    font-size: 15px !important;
+  }
+
+  .b-guy {
+    font-size: 40px !important;
+  }
+
+  .wireless p {
+    font-size: 20px !important;
+  }
+
+  .b3-iphone-14-pro {
+    width: 60px !important;
+  }
+
+  .shield h2 {
+    font-size: 25px !important;
+  }
+
+  .shield p {
+    font-size: 15px !important;
+  }
+
+  .water-r p {
+    font-size: 35px !important;
+  }
+
+  .lady-class {
+    background-size: cover !important;
+  }
+
+  .lady-class p {
+    font-size: 35px !important;
+    margin-left: 10px !important;
+  }
+
+  .group-pic {
+    width: 80% !important;
+    margin: 0 10px;
+  }
+
+  .group-pic-p {
+    margin: 0 10px;
+  }
+
+  .million-p {
+    font-size: 30px !important;
+  }
+}
+
+@media (min-width: 1000px) {
+  .durag {
+    margin-left: 100px;
+  }
+
+  .hours {
+    margin-left: 150px !important;
+  }
+
+  strong {
+    font-size: 30px;
+  }
+
+  .ocean-pic {
+    height: 100vh !important;
+    font-size: 50px !important;
+  }
+
+  .ocean-pic p {
+    font-size: 50px !important;
+    color: white !important;
+  }
+}
+
+.ocean-pic {
+  background-image: url(ocean-pic.jpg);
+  height: 70vh;
+  width: 100%;
+  background-position: center;
+}
+
+.ocean-pic p {
+  color: gray;
+  font-size: 25px;
+}
+
+span {
+  color: gray;
+}
+
+.water-r {
+  background-image: url(water-r.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+  max-width: 100%;
+}
+
+.water-r p {
+  font-weight: bold;
+  font-size: 50px;
+}
+
+.lady-class {
+  background-image: url(lady-class.jpg);
+  height: 100vh;
+  width: 100%;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+.lady-class p {
+  font-size: 50px;
+  color: white;
+  margin-left: 10px;
+  font-weight: bold;
+}
+
+.million {
+  background-image: url(million.jpg);
+  height: 70vh;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.million-p {
+  max-width: 500px;
+  font-size: 40px;
+  margin: 0 auto;
+  padding-top: 120px;
+  background: -webkit-linear-gradient(white, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+.phones-p {
+  background: -webkit-linear-gradient(blue, rgb(70, 137, 224));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: bold;
+}
+
+/* this part is for the differents iphones  */
+
+@media (max-width: 767px) {
+  .chi {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .game {
+    display: none;
+  }
+}
+
+.one p {
+  max-width: 400px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.left img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right img {
+  max-width: 100%;
+  height: auto;
+}
+
+.right-text {
+  position: absolute;
+  bottom: 0;
+  color: white;
+}
+
+.right-text h2 {
+  font-weight: bold !important;
+  font-size: 30px;
+  max-width: 400px;
+  text-align: center;
+}
+
+.heli {
+  position: relative;
+}
+
+.heli img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.heli-text {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  color: white;
+}
+
+.heli-text p {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.crash {
+  position: relative;
+}
+
+.crash img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.crash-text {
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  color: black;
+}
+
+.crash-text p {
+  font-weight: bold;
+}
+
+.saves {
+  font-size: 60px;
+  max-width: 400px;
+  font-weight: bold;
+}
+
+.line {
+  height: 3px;
+  width: 10px;
+  background: gray;
+  margin: 0 auto;
+}
+
+@media (max-width: 991px) {
+  .iphone-13-b3 img {
+    margin-top: 40px !important;
+  }
+
+  .iphone-se-b3 img {
+    margin-top: 50px !important;
+  }
+
+  .iphone-14 {
+    margin-top: 40px;
+  }
+}
+
+/* this media query stops at 1999px  */
+@media (min-width: 992px) {
+  .sos-14 {
+    padding-top: 155px !important;
+  }
+
+  .learn {
+    margin-top: 10px !important;
+  }
+
+  .iphone-14 {
+    margin-top: 30px !important;
+  }
+
+  .learn-13 {
+    margin-top: 10px !important;
+    padding-bottom: 10px;
+  }
+
+  .sos-13 {
+    margin-top: 155px !important;
+  }
+
+  .ca-13 {
+    margin-top: 110px !important;
+  }
+
+  .fr-13 {
+    margin-top: 50px !important;
+    padding-bottom: 20px;
+  }
+
+  .iphone-13-b3 {
+    margin-top: 60px !important;
+  }
+
+  .fg-13 {
+    padding-bottom: 2px;
+  }
+
+  .learn-se {
+    margin-top: 10px !important;
+    padding-bottom: 8px;
+  }
+
+  .line-se {
+    margin-top: 13px !important;
+  }
+
+  .line-se-3 {
+    margin-top: 40px !important;
+  }
+
+  .sos-se {
+    margin-top: 124px !important;
+  }
+
+  .line-sos {
+    margin-top: 10px !important;
+  }
+
+  .se-ca {
+    padding-top: 25px !important;
+  }
+
+  .se-cas {
+    margin-top: 50px !important;
+    padding: 0 !important;
+  }
+
+  .line-se-f {
+    margin-top: 90px !important;
+  }
+
+  .se-b3 {
+    margin-top: 37px;
+  }
+
+  #line {
+    margin-top: 40px !important;
+  }
+
+  #lines {
+    margin-top: 10px !important;
+  }
+}
+
+/* this media query stops at 1999px  */
+
+/* this is media query for 1200px */
+
+@media (min-width: 1200px) {
+  .sos-14 {
+    padding-top: 170px !important;
+  }
+
+  .sos-13 {
+    margin-top: 170px !important;
+  }
+
+  .fr-13 {
+    margin-top: 30px !important;
+    padding-bottom: 0px;
+  }
+
+  .se-img {
+    margin-top: 25px !important;
+  }
+
+  .learn-se {
+    margin-top: 15px !important;
+    padding-bottom: 12px;
+  }
+
+  .sos-se {
+    margin-top: 140px !important;
+  }
+
+  .se-ca {
+    padding-top: 20px !important;
+  }
+
+  .se-cas {
+    margin-top: 33px !important;
+  }
+
+  .line-se-f {
+    margin-top: 70px !important;
+  }
+}
+
+/* this is media query for 1200px */
+
+/* this is for 1400px */
+@media (min-width: 1400px) {
+  .sos-14 {
+    padding-top: 185px !important;
+  }
+
+  .sos-13 {
+    margin-top: 185px !important;
+  }
+
+  .iphone-13-b3 {
+    margin-top: 70px !important;
+  }
+
+  .se-img {
+    margin-top: 0 !important;
+  }
+
+  .learn-se {
+    margin-top: 15px !important;
+    padding-bottom: 0px;
+  }
+
+  .sos-se {
+    margin-top: 155px !important;
+  }
+
+  .se-ca {
+    padding-top: 20px !important;
+  }
+
+  .se-cas {
+    margin-top: 35px !important;
+  }
+
+  .se-b3 {
+    margin-top: 47px;
+  }
+}
+
+/* this is for 1400px */
+
+.btn {
+  width: 70px;
+  margin: 0 auto;
+}
+
+.num {
+  color: white;
+}

@@ -1,0 +1,506 @@
+/* all these are for the navbar */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.navbars {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbars a {
+  text-decoration: none;
+  color: rgb(253, 211, 211);
+}
+
+#info a {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+#menus {
+  display: flex;
+  align-items: center;
+}
+
+#menus a {
+  margin-right: 40px;
+}
+
+.mobile-navbar {
+  overflow: hidden;
+  position: relative;
+  background-color: black;
+}
+
+.mobile-navbar #links {
+  display: none;
+  padding-top: 10px;
+}
+
+.mobile-navbar a {
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  color: white;
+}
+
+.mobile-navbar .menu-open {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  color: white;
+}
+
+.mobile-navbar .fa-magnifying-glass {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30%;
+  font-size: 20px;
+}
+
+@media (min-width: 817px) {
+  .mobile-navbar {
+    display: none !important;
+  }
+
+  #menu-dropdown {
+    display: none;
+  }
+
+  .clear {
+    background: -webkit-linear-gradient(blue, rgb(205, 211, 219));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 90px !important;
+    max-width: 550px;
+    margin: auto;
+  }
+}
+
+#typex {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPad {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPhone {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-support {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-wheretobuy {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+.explore-mac {
+  margin-left: 130px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.explore-mac a {
+  text-decoration: none;
+  color: white;
+}
+
+/* this is the navbar for mobile device  */
+.navbar-mobile a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-mobile {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute; */
+  width: 100%;
+}
+/* this is the navbar for mobile device  */
+
+@media (max-width: 816px) {
+  .navbars {
+    display: none;
+  }
+
+  .disappear {
+    display: none;
+  }
+
+  .per1 {
+    width: 50%;
+  }
+
+  .per2 {
+    width: 60%;
+  }
+}
+
+.inside-menu {
+  margin-left: 70px !important;
+  margin-top: 40px;
+}
+
+.inside-menu a {
+  text-decoration: none;
+  color: white;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#menu-dropdown {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: none;
+  top: 0;
+  overflow-y: hidden !important;
+}
+.fa-bars {
+  font-size: 30px !important;
+}
+
+.fa-x {
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+.more-of-mac {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.more-of-mac a {
+  text-decoration: none;
+  color: white;
+}
+
+.more-of-mac a:hover {
+  color: rgb(212, 181, 181);
+}
+
+/* all these are for the navbar */
+
+.event:hover {
+  text-decoration: underline !important;
+}
+
+@media (max-width: 504px) {
+  .star {
+    font-size: 30px !important;
+    max-width: 300px !important;
+  }
+
+  .prepare {
+    font-size: 40px !important;
+  }
+
+  .chip {
+    font-size: 30px !important;
+  }
+
+  .mind{
+    font-size: 30px !important;
+    max-width: 300px !important;
+    margin: auto;
+  }
+}
+
+/* this is for the first midnight to starlight imgs changing laptops */
+#mid {
+  background-color: rgb(54, 45, 45);
+  height: 35px;
+  width: 30px;
+  margin-top: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#mid:hover {
+  border: 2px solid gray;
+}
+
+#spac {
+  background-color: gray;
+  height: 35px;
+  width: 30px;
+  margin-top: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#spac:hover {
+  border: 2px solid rgb(65, 47, 47);
+}
+
+#silv {
+  background-color: silver;
+  height: 35px;
+  width: 30px;
+  margin-top: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#silv:hover {
+  border: 2px solid rgb(134, 114, 114);
+}
+
+#sta {
+  background-color: black;
+  height: 35px;
+  width: 30px;
+  margin-top: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#sta:hover {
+  border: 2px solid rgb(177, 146, 146);
+}
+
+/* this is for the first midnight to starlight imgs changing laptops */
+
+#mid2 {
+  background-color: rgb(54, 45, 45);
+  height: 35px;
+  width: 30px;
+  margin-top: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#mid2:hover {
+  border: 2px solid gray;
+}
+
+#spac2 {
+  background-color: gray;
+  height: 35px;
+  width: 30px;
+  margin-top: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#spac2:hover {
+  border: 2px solid rgb(65, 47, 47);
+}
+
+.prepare {
+  background: -webkit-linear-gradient(blue, rgb(205, 211, 219));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 90px;
+}
+
+.onex {
+  background: -webkit-linear-gradient(blue, rgb(205, 211, 219));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#bg-video-inside {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  display: none;
+  overflow-y: scroll;
+}
+
+#one {
+  height: 8px;
+  width: 800px;
+  background: linear-gradient(45deg, blue, rgb(154, 164, 185));
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#two {
+  height: 8px;
+  width: 600px;
+  background: linear-gradient(45deg, gray, rgb(154, 164, 185));
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#three {
+  height: 8px;
+  width: 700px;
+  background: linear-gradient(45deg, blue, rgb(154, 164, 185));
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#four {
+  height: 8px;
+  width: 400px;
+  background: linear-gradient(45deg, gray, rgb(154, 164, 185));
+  border-radius: 10px;
+}
+
+#five {
+  height: 8px;
+  width: 800px;
+  background: linear-gradient(45deg, blue, rgb(154, 164, 185));
+  border-radius: 10px;
+}
+
+#six {
+  height: 8px;
+  width: 600px;
+  background: linear-gradient(45deg, gray, rgb(154, 164, 185));
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#seven {
+  height: 8px;
+  width: 600px;
+  background: linear-gradient(45deg, blue, rgb(154, 164, 185));
+  border-radius: 10px;
+}
+
+#eight {
+  height: 8px;
+  width: 800px;
+  background: linear-gradient(45deg, gray, rgb(154, 164, 185));
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#nine {
+  height: 8px;
+  width: 800px;
+  background: linear-gradient(45deg, blue, rgb(154, 164, 185));
+  border-radius: 10px;
+}
+
+#ten {
+  height: 8px;
+  width: 600px;
+  background: linear-gradient(45deg, gray, rgb(154, 164, 185));
+  border-radius: 10px;
+}
+
+#eleven {
+  height: 8px;
+  width: 600px;
+  background: linear-gradient(45deg, blue, rgb(154, 164, 185));
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#twelve {
+  height: 8px;
+  width: 300px;
+  background: linear-gradient(45deg, gray, rgb(154, 164, 185));
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#thirteen {
+  height: 8px;
+  width: 700px;
+  background: linear-gradient(45deg, blue, rgb(154, 164, 185));
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+#fourteen {
+  height: 8px;
+  width: 500px;
+  background: linear-gradient(45deg, gray, rgb(154, 164, 185));
+  border-radius: 10px;
+  max-width: 100%;
+}
+
+
+#night{
+  background-color: rgb(63, 46, 46);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#night:hover{
+  border: 3px solid blue;
+}
+
+#light{
+  background-color: rgb(207, 177, 177);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#light:hover{
+  border: 3px solid blue;
+}
+
+#gray{
+  background-color: gray;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#gray:hover{
+  border: 3px solid blue;
+}
+
+#silvers{
+  background-color: silver;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#silver:hover{
+  border: 3px solid blue;
+}

@@ -1,0 +1,653 @@
+/* all these are for the navbar */
+
+.navbars {
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+}
+
+.navbars a {
+  text-decoration: none;
+  color: rgb(253, 211, 211);
+}
+
+#info a {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+#menus {
+  display: flex;
+  align-items: center;
+}
+
+#menus a {
+  margin-right: 40px;
+}
+
+.mobile-navbar {
+  overflow: hidden;
+  position: relative;
+ background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+}
+
+.mobile-navbar #links {
+  display: none;
+  padding-top: 10px;
+}
+
+.mobile-navbar a {
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  color: white;
+}
+
+.mobile-navbar .menu-open {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  color: white;
+}
+
+.mobile-navbar .fa-magnifying-glass {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30%;
+  font-size: 20px;
+}
+
+@media (min-width: 817px) {
+  .mobile-navbar {
+    display: none !important;
+  }
+
+  #menu-dropdown {
+    display: none;
+  }
+
+  .sign-in-mac {
+    margin-top: 30px !important;
+  }
+}
+
+#typex {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPad {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPhone {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-support {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-wheretobuy {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+.explore-mac {
+  margin-left: 130px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.explore-mac a {
+  text-decoration: none;
+  color: white;
+}
+
+/* this is the navbar for mobile device  */
+.navbar-mobile a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-mobile {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+}
+/* this is the navbar for mobile device  */
+
+@media (max-width: 816px) {
+  .navbars {
+    display: none;
+  }
+}
+
+.inside-menu {
+  margin-left: 70px !important;
+  margin-top: 40px;
+}
+
+.inside-menu a {
+  text-decoration: none;
+  color: white;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#menu-dropdown {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: none;
+  top: 0;
+}
+
+.fa-bars {
+  font-size: 30px !important;
+}
+
+.fa-x {
+  float: right;
+  margin-bottom: 25px;
+  margin-right: 40px;
+  /* margin-left: 10px; */
+  font-size: 30px;
+}
+
+.more-of-mac {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.more-of-mac a {
+  text-decoration: none;
+  color: white;
+}
+
+.more-of-mac a:hover {
+  color: rgb(212, 181, 181);
+}
+
+/* all these are for the navbar */
+
+body {
+  font-family: "Roboto", sans-serif !important;
+}
+sup {
+  vertical-align: super;
+}
+@media (max-width: 600px) {
+  .heads {
+    font-size: 40px !important;
+    max-width: 400px !important;
+  }
+
+  .side-laptop {
+    display: none !important;
+  }
+
+  .light-room {
+    margin-right: 50px !important;
+  }
+
+  .head {
+    font-size: 40px !important;
+  }
+
+  .right p {
+    display: none;
+  }
+  .tech {
+    display: none;
+  }
+
+  .types {
+    font-size: 20px !important;
+  }
+}
+
+.watch {
+  color: blue;
+}
+
+.watch:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+}
+
+.super {
+  background-image: url(supercharged-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  padding-top: 200px;
+  background-size: cover;
+}
+
+@media (max-width: 550px) {
+  .super-text {
+    font-size: 40px !important;
+  }
+
+  .game-img {
+    height: 500px !important;
+  }
+
+  .first p {
+    font-size: 20px !important;
+  }
+
+  .second p {
+    font-size: 20px !important;
+  }
+
+  .side-laptop-p {
+    font-size: 12px !important;
+    justify-content: space-between !important;
+  }
+
+  .black-desktp p {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+  }
+}
+
+@media (max-width: 390px) {
+  .super-text {
+    font-size: 30px !important;
+  }
+
+  .magic-touch {
+    font-size: 30px !important;
+  }
+}
+
+.properties-m {
+  background: -webkit-linear-gradient(blue, rgb(151, 160, 211));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+/* .plus:hover{
+  background-color: white;
+  color: black;
+  border: 3px solid white;
+  transition: .6s;
+} */
+
+.plus {
+  color: white;
+  cursor: pointer;
+}
+
+.plus:hover {
+  text-decoration: underline !important;
+}
+
+.game-image {
+  margin-top: 100px;
+  background: url(game-img.jpg);
+  height: 600px;
+  /* width: 100vw; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.line {
+  background-color: white;
+  height: 3px;
+  width: 50px;
+}
+
+@media (min-width: 735px) {
+  .one {
+    margin-left: 100px !important;
+  }
+
+  .three {
+    margin-right: 100px !important;
+  }
+
+  .four {
+    margin-left: 100px;
+  }
+
+  .five {
+    margin-right: 100px;
+  }
+
+  .xcode {
+    margin-right: 120px !important;
+  }
+
+  .xcodes {
+    margin-right: 200px !important;
+  }
+
+  .m2-pro h2 {
+    font-size: 50px !important;
+  }
+
+  .m2-pro p {
+    max-width: 700px;
+    font-size: 25px;
+  }
+
+  .magic-touch {
+    font-size: 80px !important;
+    margin-left: 50px !important;
+  }
+
+  .after-keys {
+    font-size: 30px !important;
+    max-width: 700px !important;
+    margin-left: 50px !important;
+  }
+}
+
+.games-image {
+  margin-top: 100px;
+  background: url(games.jpg);
+  height: 600px;
+  /* width: 100vw; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 735px) {
+  .size {
+    font-size: 40px !important;
+    max-width: 350px !important;
+    margin-left: 100px !important;
+  }
+}
+
+/* this is for the annoucement watch video */
+
+@media (min-width: 700px) {
+  .youtube {
+    height: 100vh !important;
+  }
+
+  #bg-video {
+    height: 100% !important;
+  }
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: none;
+  overflow-y: auto;
+}
+/* this is for the annoucement watch video */
+
+/* this is for go inside  */
+
+@media (min-width: 700px) {
+  .lorem {
+    font-size: 25px !important;
+  }
+
+  .ram-gb p {
+    font-size: 20px;
+  }
+
+  .line-14 {
+    width: 300px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .models-14 {
+    text-align: left !important;
+  }
+
+  .best-lap {
+    font-size: 50px;
+  }
+
+  .para-lady {
+    font-size: 30px;
+  }
+
+  .thousand {
+    font-size: 100px !important;
+  }
+
+  .thousands {
+    font-size: 120px !important;
+  }
+
+  .side-laptop-p {
+    font-size: 35px !important;
+  }
+
+  .india-p {
+    font-size: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .korean-p {
+    font-size: 25px;
+    max-width: 400px;
+    margin-left: 50px;
+  }
+
+  .plug h3 {
+    font-size: 50px;
+  }
+
+  .plug p {
+    font-size: 25px;
+    max-width: 600px;
+  }
+
+  .four-air {
+    margin-bottom: 45px;
+  }
+  .four-air-p-4 {
+    margin-bottom: 40px;
+  }
+}
+
+.close-inside {
+  color: white;
+  margin-right: 50px;
+}
+/* this is for go inside  */
+
+#bg-video-inside {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  display: none;
+  overflow-y: scroll;
+}
+
+.line-14 {
+  width: 270px;
+  margin: 0 auto;
+  background-color: rgb(180, 156, 156);
+  height: 2px;
+}
+
+.hrs-14 {
+  background: -webkit-linear-gradient(blue, rgb(151, 160, 211));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
+
+.one-cool {
+  width: 500px;
+  background-color: rgb(22, 11, 11);
+  max-width: 100%;
+}
+
+.ssd {
+  background: -webkit-linear-gradient(blue, rgb(151, 160, 211));
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 700;
+}
+
+html,
+body {
+  position: relative;
+  height: 30%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+swiper-container {
+  width: 80%;
+  height: 60%;
+  margin-top: 100px;
+}
+
+swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: rgb(31, 27, 27);
+  padding-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+swiper-slide img {
+  display: block;
+  width: 80%;
+  height: 60%;
+  /* object-position: center; */
+  object-fit: cover;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: red !important;
+}
+
+.mySwiper p {
+  color: rgb(231, 208, 208);
+}
+
+.black-d {
+  color: white;
+  margin-top: 20px;
+}
+
+.side-laptop {
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url(side-laptop.jpg);
+}
+
+.side-laptop-p {
+  font-size: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.studio {
+  width: 600px;
+  padding-top: 20px;
+  padding-right: 20px;
+  max-width: 100%;
+}
+
+@media (min-width: 1100px) {
+  .sign-in-mac {
+    margin-top: 40px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .sign-in-mac {
+    margin-top: 50px !important;
+  }
+}
+
+#one-circle {
+  width: 40px;
+  height: 40px;
+  background-color: gray;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#two-circle {
+  width: 40px;
+  height: 40px;
+  background-color: white;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#one-circle:hover {
+  border: 2px solid blue;
+}
+
+#two-circle:hover {
+  border: 2px solid blue;
+}
+
+.compare-mac:hover {
+  text-decoration: underline !important;
+}
+
+.carousel-inner {
+  width: 80% !important;
+  height: 60% !important;
+  margin-left: auto;
+}

@@ -1,0 +1,399 @@
+/* all these are for the navbar */
+*{
+  padding: 0;
+  margin: 0;
+}
+
+.navbars{
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+ background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+
+
+
+
+.navbars a{
+  text-decoration: none;
+  color: rgb(253, 211, 211);
+}
+
+
+
+#info a{
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+#menus{
+  display: flex;
+  align-items: center;
+}
+
+#menus a{
+  margin-right: 40px;
+}
+
+.mobile-navbar{
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+}
+
+.mobile-navbar #links{
+  display: none;
+  padding-top: 10px;
+}
+
+.mobile-navbar a{
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  color: white;
+}
+
+.mobile-navbar .menu-open{
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  color: white;
+}
+
+.mobile-navbar .fa-magnifying-glass{
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30%;
+  font-size: 20px;
+}
+
+
+@media(min-width:817px){
+.mobile-navbar{
+  display: none !important;
+}
+
+#menu-dropdown{
+  display: none;
+}
+
+.octanex{
+  font-size: 20px !important;
+  max-width: 500px;
+  text-align: left !important;
+}
+
+.data{
+  right: 3% !important;
+  font-size: 15px !important;
+}
+
+.magic{
+  font-size: 70px !important;
+}
+
+  .right{
+    /* font-size: 70px !important; */
+  }
+ 
+}
+
+@media(max-width:500px){
+  #overview{
+    display: none;
+  }
+
+  .ipad-pro{
+    font-size: 17px;
+  }
+}
+
+@media(min-width: 600px){
+  .ipro{
+    font-size: 60px !important;
+  }
+
+  .changed{
+    font-size: 50px !important;
+  }
+
+  .pipad{
+    max-width: 700px;
+  }
+
+  .chip-m2{
+    font-size: 60px;
+    max-width: 400px !important;
+    margin: auto;
+  }
+
+  .xdr h1{
+    font-size: 70px !important;
+  }
+
+  .chy h2{
+    font-size: 50px !important;
+  }
+
+  .retina h1{
+    font-size: 50px !important;
+  }
+
+  .display-words h2{
+    font-size: 60px !important;
+  }
+
+  .mp{
+    font-size: 60px !important;
+  }
+
+  .fast{
+    margin-left: 70px !important;
+  }
+
+  .magic{
+    font-size: 50px;
+  }
+
+  .pro{
+    max-width: 500px;
+    margin-left: 60px;
+  }
+
+  .apps{
+    font-size: 70px !important;
+    max-width: 600px !important;
+  }
+
+  .app-words{
+    font-size: 20px;
+    max-width: 600px;
+  }
+
+  .Ar{
+    font-size: 40px;
+    max-width: 400px;
+  }
+
+  .right{
+    font-size: 20px;
+  }
+
+}
+
+.apps4Ipda:hover{
+  text-decoration: underline !important;
+}
+
+
+  .display-words p{
+    color: white;
+  }
+.changed{
+    background: -webkit-linear-gradient(red,blue ,  orange);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+ 
+
+
+#typex{
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPad{
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPhone{
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-support{
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-wheretobuy{
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+.explore-mac{
+  margin-left: 130px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.explore-mac a{
+  text-decoration: none;
+  color: white;
+}
+
+
+/* this is the navbar for mobile device  */
+.navbar-mobile a{
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-mobile{
+    background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute; */
+  width: 100%;
+}
+/* this is the navbar for mobile device  */
+
+@media(max-width:816px){
+.navbars{
+  display: none;
+}
+
+.ll{
+  position: relative !important;
+  left: 0 !important;
+}
+
+
+}
+
+@media(max-width:850px){
+.data{
+  display: none !important;
+}
+
+
+
+}
+
+.inside-menu{
+  margin-left: 70px !important;
+  margin-top: 40px;
+}
+
+.inside-menu a{
+  text-decoration: none;
+  color: white;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#menu-dropdown{
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: none;
+  top: 0;
+  overflow-y: hidden !important;
+}
+.fa-bars{
+  font-size: 30px !important;
+}
+
+.fa-x {
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+.more-of-mac{
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.more-of-mac a{
+  text-decoration: none;
+  color: white;
+}
+
+.more-of-mac a:hover{
+  color: rgb(212, 181, 181);
+}
+/* all these are for the navbar */
+
+.colo{
+  background: -webkit-linear-gradient(red, blue);
+    -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.chy h2{
+  background: -webkit-linear-gradient(yellow, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media(min-width:1000px){
+  .hero{
+    left: 15% !important;
+  }
+}
+
+#oneD{
+  background-color: gray;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#oneD:hover{
+  border: 2px solid black;
+}
+
+#twoD{
+  background-color: rgb(95, 61, 61);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+#twoD:hover{
+  border: 2px solid black;
+}
+
+.line{
+  height: 2px;
+  width: 200px;
+  background-color: gray;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+

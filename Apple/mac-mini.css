@@ -1,0 +1,805 @@
+/* all these are for the navbar */
+
+* {
+  padding: 0;
+  margin: 0;
+}
+.navbars {
+ background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.navbars a {
+  text-decoration: none;
+  color: rgb(253, 211, 211);
+}
+
+#info a {
+  padding-right: 30px;
+  padding-left: 30px;
+  margin-left: 20px;
+}
+
+#menus {
+  display: flex;
+  align-items: center;
+}
+
+#menus a {
+  margin-right: 40px;
+}
+
+.mobile-navbar {
+  overflow: hidden;
+  position: relative;
+ background-color: rgba(0, 0, 0, 0.753);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  width: 100%;
+}
+
+.mobile-navbar #links {
+  display: none;
+  padding-top: 10px;
+}
+
+.mobile-navbar a {
+  text-decoration: none;
+  padding: 20px;
+  display: block;
+  color: white;
+}
+
+.mobile-navbar .menu-open {
+  display: block;
+  position: absolute;
+  top: 15px;
+  right: 10%;
+  color: white;
+}
+
+.mobile-navbar .fa-magnifying-glass {
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 30%;
+  font-size: 20px;
+}
+
+@media (min-width: 817px) {
+  .mobile-navbar {
+    display: none !important;
+  }
+
+  #menu-dropdown {
+    display: none;
+  }
+}
+
+#typex {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPad {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-iPhone {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-support {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+#typex-wheretobuy {
+  display: flex;
+  background-color: rgb(29, 26, 26);
+  width: 100%;
+  height: 60vh;
+  display: none;
+}
+
+.explore-mac {
+  margin-left: 130px;
+  padding-top: 20px;
+  font-size: 20px;
+}
+
+.explore-mac a {
+  text-decoration: none;
+  color: white;
+}
+
+/* this is the navbar for mobile device  */
+.navbar-mobile a {
+  text-decoration: none;
+  color: white;
+}
+
+.navbar-mobile {
+  background-color: black;
+  padding: 20px;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* position: absolute; */
+  width: 100%;
+}
+/* this is the navbar for mobile device  */
+
+@media (max-width: 816px) {
+  .navbars {
+    display: none;
+  }
+}
+
+.inside-menu {
+  margin-left: 70px !important;
+  margin-top: 40px;
+}
+
+.inside-menu a {
+  text-decoration: none;
+  color: white;
+  margin-top: 40px;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+#menu-dropdown {
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: none;
+  top: 0;
+  overflow-y: hidden !important;
+}
+.fa-bars {
+  font-size: 30px !important;
+}
+
+.fa-x {
+  float: right;
+  margin-top: 25px;
+  margin-right: 20px;
+  font-size: 30px;
+}
+.more-of-mac {
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+.more-of-mac a {
+  text-decoration: none;
+  color: white;
+}
+
+.more-of-mac a:hover {
+  color: rgb(212, 181, 181);
+}
+
+/* all these are for the navbar */
+
+.muscle {
+  background: -webkit-linear-gradient(black, white);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.full-desktop {
+  /* height: 60vh; */
+  width: 100%;
+  background-repeat: no-repeat;
+  background-image: url(full-desktop.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (max-width: 1000px) {
+  .full-desktop {
+    /* height: 150vh !important; */
+  }
+}
+
+/* this is for the annoucement watch video */
+
+@media (min-width: 700px) {
+  .youtube {
+    height: 100vh !important;
+  }
+
+  #bg-video {
+    height: 100% !important;
+  }
+
+  .muscle {
+    font-size: 60px !important;
+  }
+}
+
+#bg-video {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: none;
+  overflow-y: auto;
+}
+/* this is for the annoucement watch video */
+
+li {
+  list-style: none;
+  background: -webkit-linear-gradient(white, blue);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+ul {
+  padding: 0 !important;
+}
+
+/* this is for go inside  */
+
+@media (min-width: 700px) {
+  .lorem {
+    font-size: 25px !important;
+  }
+
+  .ram-gb p {
+    font-size: 20px;
+  }
+
+  .line-14 {
+    width: 300px !important;
+  }
+}
+
+@media (min-width: 768px) {
+  .models-14 {
+    text-align: left !important;
+  }
+
+  .best-lap {
+    font-size: 50px;
+  }
+
+  .para-lady {
+    font-size: 30px;
+  }
+
+  .thousand {
+    font-size: 100px !important;
+  }
+
+  .thousands {
+    font-size: 120px !important;
+  }
+
+  .side-laptop-p {
+    font-size: 35px !important;
+  }
+
+  .india-p {
+    font-size: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+
+  .korean-p {
+    font-size: 25px;
+    max-width: 400px;
+    margin-left: 50px;
+  }
+
+  .plug h3 {
+    font-size: 50px;
+  }
+
+  .plug p {
+    font-size: 25px;
+    max-width: 600px;
+  }
+
+  .four-air {
+    margin-bottom: 45px;
+  }
+  .four-air-p-4 {
+    margin-bottom: 40px;
+  }
+
+  .mini {
+    margin-top: 200px;
+  }
+
+  .mini h2 {
+    font-size: 60px !important;
+  }
+
+  .perform {
+    font-size: 60px;
+    margin-top: 40px;
+  }
+
+  .minus {
+    margin-top: 150px;
+  }
+
+  .versi {
+    font-size: 90px !important;
+    font-size: 50px;
+  }
+
+  .versis {
+    font-size: 90px !important;
+    font-size: 50px;
+    margin-left: 150px !important;
+  }
+
+  .system {
+    font-size: 60px !important;
+  }
+
+  .systems {
+    font-size: 60px !important;
+    margin-left: 150px !important;
+  }
+
+  .go {
+    font-size: 25px !important;
+    max-width: 500px;
+  }
+
+  .gos {
+    font-size: 25px !important;
+    max-width: 500px;
+    margin-left: 150px !important;
+  }
+
+  .gosa {
+    font-size: 38px !important;
+    max-width: 600px;
+    margin-left: 150px !important;
+  }
+
+  .vers {
+    margin-left: 100px !important;
+    font-size: 40px;
+  }
+
+  .pro {
+    font-size: 20px !important;
+  }
+
+  .im {
+    width: 70vw !important;
+    height: 80vh !important;
+    margin: 0 auto;
+  }
+
+  .enlarge{
+    font-size: 70px !important;
+    max-width: 600px !important;
+    margin-left: 50px !important;
+  }
+
+  .enlarges{
+    font-size: 25px;
+    max-width: 400px !important;
+  }
+
+  .enlargess{
+    margin-left: 175px !important; !
+
+  }
+
+  .right{
+    font-size: 70px;
+  }
+}
+
+.close-inside {
+  color: white;
+  margin-right: 50px;
+}
+/* this is for go inside  */
+
+#bg-video-inside {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100%;
+  display: none;
+  overflow-y: scroll;
+}
+
+/* this is for photo editing  */
+
+#line1 {
+  height: 5px;
+  width: 900px;
+  background: linear-gradient(45deg, white, blue);
+  border-radius: 20px;
+}
+
+#line2 {
+  height: 5px;
+  width: 600px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+}
+
+#line3 {
+  height: 5px;
+  width: 470px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+#line4 {
+  height: 5px;
+  width: 570px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 70px;
+  max-width: 100%;
+}
+
+#line5 {
+  height: 5px;
+  width: 230px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 90px;
+  max-width: 100%;
+}
+
+/* this is for photo editing  */
+
+/* this is for image upscaling */
+#line6 {
+  height: 5px;
+  width: 900px;
+  background: linear-gradient(45deg, white, blue);
+  border-radius: 20px;
+}
+
+#line7 {
+  height: 5px;
+  width: 800px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+}
+
+#line8 {
+  height: 5px;
+  width: 700px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+#line9 {
+  height: 5px;
+  width: 470px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 70px;
+  max-width: 100%;
+}
+
+#line10 {
+  height: 5px;
+  width: 120px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 90px;
+  max-width: 100%;
+}
+/* this is for image upscaling */
+
+/* this is for video editing */
+#line11 {
+  height: 5px;
+  width: 900px;
+  background: linear-gradient(45deg, white, blue);
+  border-radius: 20px;
+}
+
+#line12 {
+  height: 5px;
+  width: 450px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+}
+
+#line13 {
+  height: 5px;
+  width: 300px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+#line14 {
+  height: 5px;
+  width: 400px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 70px;
+  max-width: 100%;
+}
+
+#line15 {
+  height: 5px;
+  width: 110px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 90px;
+  max-width: 100%;
+}
+
+/* this is for video editing */
+
+/* this is for video transcoding */
+#line16 {
+  height: 5px;
+  width: 900px;
+  background: linear-gradient(45deg, white, blue);
+  border-radius: 20px;
+}
+
+#line17 {
+  height: 5px;
+  width: 500px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+}
+
+#line18 {
+  height: 5px;
+  width: 270px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+#line19 {
+  height: 5px;
+  width: 350px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 70px;
+  max-width: 100%;
+}
+
+#line20 {
+  height: 5px;
+  width: 110px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 90px;
+  max-width: 100%;
+}
+/* this is for video transcoding */
+
+/*  this is for code compling */
+#line21 {
+  height: 5px;
+  width: 900px;
+  background: linear-gradient(45deg, white, blue);
+  border-radius: 20px;
+}
+
+#line22 {
+  height: 5px;
+  width: 500px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+}
+
+#line23 {
+  height: 5px;
+  width: 400px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+#line24 {
+  height: 5px;
+  width: 400px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 70px;
+  max-width: 100%;
+}
+
+#line25 {
+  height: 5px;
+  width: 300px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 90px;
+  max-width: 100%;
+}
+/*  this is for code compling */
+
+/* this is for productivity */
+#line26 {
+  height: 5px;
+  width: 900px;
+  background: linear-gradient(45deg, white, blue);
+  border-radius: 20px;
+}
+
+#line27 {
+  height: 5px;
+  width: 800px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+}
+
+#line28 {
+  height: 5px;
+  width: 700px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 40px;
+  max-width: 100%;
+}
+
+#line29 {
+  height: 5px;
+  width: 570px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 70px;
+  max-width: 100%;
+}
+
+#line30 {
+  height: 5px;
+  width: 500px;
+  background: linear-gradient(3deg, orange, blue);
+  border-radius: 20px;
+  margin-top: 90px;
+  max-width: 100%;
+}
+/* this is for productivity */
+
+#photoe:hover {
+  text-decoration: underline;
+}
+
+#imageu:hover {
+  text-decoration: underline;
+}
+
+#videoed:hover {
+  text-decoration: underline;
+}
+
+#videotr:hover {
+  text-decoration: underline;
+}
+
+#codeco:hover {
+  text-decoration: underline;
+}
+
+#productiv:hover {
+  text-decoration: underline;
+}
+
+.mac-exe {
+  width: 1200px;
+  background: linear-gradient(180deg, red, yellow);
+  margin-top: 30px;
+  border-radius: 20px;
+  max-width: 100%;
+}
+
+.tower {
+  background: linear-gradient(180deg, purple, rgba(128, 0, 128, 0.473));
+  width: 700px;
+  max-width: 100%;
+  border-radius: 20px;
+  padding-bottom: 50px;
+  height: 700px;
+}
+
+.mulit-c {
+  background-image: url(muli-colour.jpg);
+  /* height: 700px;  */
+  width: 450px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  max-width: 100%;
+}
+
+.storage {
+  background: linear-gradient(100deg, red, pink);
+  /* height: 680px; */
+  width: 600px;
+  max-width: 100%;
+}
+
+.security {
+  width: 600px;
+  max-width: 100%;
+  background: linear-gradient(100deg, orange, red);
+  padding-bottom: 10px;
+}
+
+.img-with-text {
+  text-align: justify;
+  width: [width of img];
+  text-align: justify;
+}
+
+.img-with-text img {
+  display: block;
+  margin: 0 auto;
+}
+
+.thunderbolt-4 {
+  background-image: url(thunderbolt-4-pic.jpg);
+  width: 900px;
+  max-width: 100%;
+  padding-bottom: 10px;
+  height: 800px;
+  border-radius: 20px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+}
+
+.wifi-6e {
+  background-color: #8ec5fc;
+  background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+  width: 600px;
+  max-width: 100%;
+  margin-top: 100px;
+  border-radius: 20px;
+}
+
+
+.gosa:hover{
+  text-decoration: underline !important;
+}
+
+.hov:hover{
+  text-decoration: underline !important;
+}
+

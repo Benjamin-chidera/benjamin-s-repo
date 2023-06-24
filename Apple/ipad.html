@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="ipad.css">
+  <script src="ipad.js" defer></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- this is for animate on scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  <!-- this is for animate on scroll -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.0/gsap.min.js" defer></script>
+
+  <script src="https://kit.fontawesome.com/3baa2d3eec.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- this is for navbar -->
+  <div class="navbars">
+    <div class="apple">
+      <a href="home.html"><i class="fa-brands fa-apple"></i></a>
+    </div>
+    <div id="info" class="d-flex">
+      <a href="" onmouseover="openMac()">Mac</a>
+      <a href="" onmouseenter="openiPad()">iPad</a>
+      <a href="" onmouseover="openiPhone()">iPhone</a>
+      <a href="" onmouseover="openSupport()">Support</a>
+      <a href="" onmouseover="openWhereToBuy()">Where to Buy</a>
+    </div>
+
+
+    <div id="menus">
+      <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+    </div>
+  </div>
+
+  <section id="typex">
+    <div class="explore-mac  d-grid">
+      <a href="" class="fs-6 pb-2">Explore-mac</a>
+      <a href="">MacBook Air</a>
+      <a href="">MacBook Pro</a>
+      <a href="">iMac</a>
+      <a href="">Mac mini</a>
+      <a href="">Mac Studio</a>
+      <a href="">Mac Pro</a>
+      <a href="">Displays</a>
+      <a href="">Explore All Mac</a>
+    </div>
+    <div class=" more-of-mac">
+      <a href="">More from mac</a>
+      <a href="" class="ms-3">More from mac</a>
+    </div>
+  </section>
+
+  <section id="typex-iPad">
+    <div class="explore-mac  d-grid">
+      <a href="" class="fs-6 pb-2">Explore-iPad</a>
+      <a href="">iPad Pro</a>
+      <a href="">iPad Air</a>
+      <a href="">iPad</a>
+      <a href="">iPad mini</a>
+      <a href="">Explore All iPad</a>
+    </div>
+    <div class=" more-of-mac">
+      <a href="">More from iPad</a>
+      <a href="" class="ms-3">iPad Support</a>
+    </div>
+  </section>
+
+  <section id="typex-iPhone">
+    <div class="explore-mac  d-grid">
+      <a href="" class="fs-6 pb-2">Explore-iPhone</a>
+      <a href="">iPhone 14 Pro</a>
+      <a href="">iPhone 14</a>
+      <a href="">iPhone 13</a>
+      <a href="">iPhone 12</a>
+      <a href="">iPhone se</a>
+      <a href="">Explore All iPad</a>
+    </div>
+    <div class=" more-of-mac">
+      <a href="">More from iPhone</a>
+      <a href="" class="ms-3">iPhone Support</a>
+    </div>
+  </section>
+
+  <section id="typex-support">
+    <div class="explore-mac  d-grid">
+      <a href="" class="fs-6 pb-2">Explore-Support</a>
+      <a href="">iPhone </a>
+      <a href="">Mac</a>
+      <a href="">iPad</a>
+      <a href="">Music</a>
+      <a href="">Explore Support</a>
+    </div>
+    <div class=" more-of-mac">
+      <a href="">community</a>
+      <a href="" class="ms-3">Contact us</a>
+    </div>
+  </section>
+
+  <section id="typex-wheretobuy">
+    <div class="explore-mac  d-grid">
+      <a href="" class="fs-6 pb-2">Authorized Resller</a>
+      <a href="">Service & Support </a>
+      <a href="">Explore All Ways to Buy</a>
+    </div>
+  </section>
+
+
+
+
+  <!-- this is for mobile phone navbar -->
+
+  <div class="mobile-navbar">
+    <div>
+      <a href="home.html"><i class="fa-brands fa-apple fs-3 ms-4"></i></a>
+    </div>
+
+    <div id="links" class="bg-dark">
+      <a href="">Mac</a>
+      <a href="">iPad</a>
+      <a href="">iPone</a>
+      <a href="">Support</a>
+      <a href="">Where to Buy</a>
+    </div>
+
+    <div>
+      <i class="fa-solid  fa-magnifying-glass text-light"></i>
+      <i class="fa-solid fa-bars menu-open" onclick="opensnav()"></i>
+    </div>
+  </div>
+  <!-- this  is for mobile phone device menubar -->
+  <!-- this is for navbar -->
+
+
+  <main>
+    <div class="d-flex justify-content-between container mt-4">
+      <p style="font-size: 20px; font-weight: 600;">iPad</p>
+      <div class="d-flex gap-4 align-items-center">
+        <p class="not-show-mobile" style="color: gray; margin-top: 15px; display: none;">Overview</p>
+        <a class="not-show-mobile" href="" style="text-decoration: none; display: none; ">Tech Specs</a>
+        <a href=""
+          style="text-decoration: none; background-color: rgb(147, 147, 185); color: white; padding: 3px 5px; border-radius: 10px;">Find
+          a store</a>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center flex-column flex-md-row">
+      <img src="ipad-sec.jpg" style="max-width: 100%;" alt="">
+      <div class="ml4">
+        <p style="font-size: 40px; text-align: center;">iPad</p>
+        <p class="ipad-word" style="font-weight: bold; font-size: 40px;">Loveable.</p>
+        <p class="ipad-word" style="font-weight: bold; font-size: 40px;">Drawable.</p>
+        <p class="ipad-word" style="font-weight: bold; font-size: 40px;">Magical</p>
+      </div>
+    </div>
+
+    <div>
+      <h2 class="ipad-word" style="font-size: 40px; max-width: 550px; margin: 0 auto; margin-top: 60px;">
+        All screen. All colorful. Jot it down. Type it up. Take it with you.
+      </h2>
+      <div  data-aos="fade-right" class="text-center mt-5">
+        <img src="new-mutli-ipad.jpg" style="max-width:100%;" alt="">
+      </div>
+    </div>
+
+    <!-- this is for meet the  redesigned iPad.-->
+    <div data-aos="fade-up" class="">
+      <h1 class="ipad-word container" style="font-size: 40px;">Meet the redesigned iPad.</h1>
+      <p class="redesign container mt-5" style="font-size: 20px; color: gray; font-weight: 700;">Lorem ipsum dolor sit
+        amet consectetur
+        adipisicing elit. Provident repellat aperiam vitae minima accusamus
+        dignissimos ex, nam labore quis natus cumque possimus <span style="color: black;">expedita dolor dolorem id
+          quaerat, et</span>dolores
+        omnis.</p>
+    </div>
+
+    <div data-aos="fade-in" class="d-flex justify-content-center align-items-center mt-5" style="position: relative;">
+      <img id="appears" src="unlock-ipad-pic.png"
+        style="width: 10%; height: 90px; position: absolute; right: 75%; top: 25%;" alt="">
+      <img src="unlock-ipad.jpg" class="four-color" style="width: 50%; width: 70%;" alt="">
+      <img src="four-colors.png" class="four-color" style=" position: absolute; right:20%; top:52%; display: none; "
+        alt="">
+    </div>
+    <!-- this is for meet the  redesigned iPad.-->
+
+
+    <!-- this is for the all bodies all abilities -->
+
+    <div  data-aos="fade-right" class="d-flex justify-content-center flex-column flex-md-row">
+      <img src="bodies-keyboard.jpg" alt="" >
+      <div class="d-block gap-4 align-items-center">
+        <img src="blue-mini-laptop.png" style="margin-top: 50px;" alt="">
+        <h4 style="max-width: 300px; margin-top: 30px;">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Voluptate magni numquam non nostrum. Suscipit fugiat, alias commodi maiores voluptatem repellat molestias fuga
+          veritatis velit rerum!</h4>
+        <img src="ipad-out.jpg" style="margin-top: 50px; position: relative; max-width: 100%" alt="">
+        <img src="no-pair.png" alt="" margin-left: 50px;">
+      </div>
+    </div>
+    <!-- this is for the all bodies all abilities -->
+
+    <!-- this is for the met field trip -->
+    <div class="d-flex justify-content-center mt-5 gap-5 flex-column flex-md-row">
+      <div class="d-block">
+        <img src="ipad-os.png" alt="">
+        <p style="font-size: 30px; max-width: 300px; color: gray; font-weight: 600;">Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Possimus aliquid magni sunt doloremque suscipit
+          veniam modi consequuntur alias facere nesciunt!</p>
+      </div>
+      <div  data-aos="fade-left" class="d-block">
+        <img src="trip-ipad.jpg" style="max-width: 100%;" alt="">
+        <div class="text-end me-5 mt-4"><img src="at-once.png" alt=""></div>
+      </div>
+    </div>
+    <!-- this is for the met field trip -->
+
+    <div  data-aos="fade-right">
+      <img src="indox-pic.jpg" class="inbox-pic" style="max-width: 100%; width: 60%; margin-top: 50px;" alt="">
+    </div>
+
+    <div style="margin-top: 100px;">
+      <h2 class="quick container">Make quick work of your work.</h2>
+      <p class=" under-quick">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum vitae a blanditiis eaque
+        sit libero?</p>
+    </div>
+
+
+    <div  data-aos="zoom-in" class="d-flex justify-content-center align-items-center gap-3 flex-column flex-md-row"
+      style="margin-top: 80px;">
+      <img src="pool-design.jpg" style="max-width: 100%;" alt="">
+      <img src="take-note.png" style="max-width: 100%; " alt="">
+    </div>
+
+    <div  data-aos="zoom-in" class="text-center" style="margin-top: 80px;">
+      <img src="rotate-ipad.jpg" style="max-width: 100%;" alt="">
+    </div>
+
+    <div class="d-flex justify-content-center flex-column flex-md-row" style="margin-top: 100px;">
+      <div class="d-block">
+        <img src="a-14.png" class="ms-5" alt="">
+        <p class="ms-5 a-14-word text-secondary fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Consequuntur minima dolorem
+          nulla! Perspiciatis,
+          laboriosam veritatis?</p>
+      </div>
+      <div  data-aos="fade-left" class="text-center">
+        <img src="rotate-mini-ipad.jpg" style="max-width: 100%; " alt="">
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center flex-column flex-md-row" style="margin-top: 100px;">
+      <div class="d-block">
+        <img src="keyboard.png" class="ms-5" alt="">
+        <p class="ms-5 a-14-word text-secondary fw-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          Dicta qui beatae perspiciatis
+          dolorem eum dolore.
+        </p>
+      </div>
+      <div  data-aos="fade-left" style="text-align: center;">
+        <img src="keyboard-pic.jpg" style="max-width: 100%; " alt="">
+      </div>
+    </div>
+
+    <div style="margin-top: 50px;">
+      <h2 class="content" style="margin-left: 10px; max-width: 200px;">Create to your heart's content.</h2>
+      <p class=" content-p" style="margin-left: 10px; color: gray; font-weight: 600;">Lorem ipsum dolor sit amet
+        consectetur adipisicing elit. Nisi similique delectus dolorum temporibus praesentium
+        cumque adipisci nemo beatae aliquid eos.</p>
+    </div>
+
+    <div  data-aos="fade-in" class="draw-ipad">
+      <img src="draw-ipad.jpg" class="dis-app" style="max-width: 100%;" alt="">
+      <img src="draw-4k.png" class="dis-apps" style="display: none; position: absolute; right: 20%; top: 10%;" alt="">
+    </div>
+
+    <div  data-aos="fade-right" class="d-flex justify-content-center flex-column flex-lg-row gap-4" style="margin-top: 100px;">
+      <img src="record-pic-ipad.jpg" style="max-width: 100%; width: 60%;" alt="">
+      <div class="d-block">
+        <img class="volume" src="record-pic.png" alt="">
+        <p class="volume-p text-secondary">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam voluptate
+          beatae ipsa aliquid
+          ut quod!
+          Blanditiis soluta corrupti aspernatur expedita.</p>
+      </div>
+    </div>
+
+    <div  data-aos="fade-out" class="camera d-flex flex-column flex-lg-row gap-4 mt-5">
+      <img src="work-ipad-pic.jpg" class="work-ipad" style="max-width: 100%; " alt="">
+      <div class="d-block">
+        <img src="camera.png" class="cameras ms-3" style="height: 50px; width: 50px;" alt="">
+        <p class="camera-p ms-3 text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque in
+          maiores, deserunt quia asperiores
+          consequatur!</p>
+        <img src="xr-pic.jpg" style="max-width: 100%;" alt="">
+        <img src="camera-too.png" style="max-width: 100%;" alt="">
+      </div>
+    </div>
+
+    <div style="margin-top: 50px;">
+      <h2 class="frame" style="max-width: 150px; margin-left: 10px;">Get in touch. Stay in frame.</h2>
+      <p class="frame-p" style="max-width: 300px; margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Incidunt magni obcaecati eveniet unde vitae earum
+        maiores saepe voluptates facilis fuga.</p>
+    </div>
+
+    <div data-aos="zoom-in" class="dance text-center">
+      <video src="dance.mp4" id="myvideo" muted loop style="max-width: 100%;"></video>
+      <p id="play" style="cursor: pointer;" onclick="plays() ">Play ▶
+      </p>
+      <img src="stage.png" class="stage" style=" max-width: 100%;" alt="">
+    </div>
+
+    <div  data-aos="zoom-out" style="text-align: center; margin-top: 50px;">
+      <img src="half-camera.jpg" style="position: relative; max-width: 100%;" alt="">
+    </div>
+
+    <div>
+      <img src="front-camera.png" class="front" alt=""
+        style="position: absolute; display: none; left: 70%; top: 1850%;">
+    </div>
+
+    <div  class="text-center" style="margin-top: 70px;">
+      <img src="full ipad.jpg" style="max-width: 100%;" alt="" <div data-aos="fade-right"></div>>
+    </div>
+
+    <div>
+      <img src="connect.png" class="connect" style="max-width: 100%; margin-top: 50px; margin-left: 10px;" alt="">
+      <p style=" margin-left: 10px;" class="connect-p">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Obcaecati sed, fuga eos officia autem repellat fuga eos officia autem repellat fuga eos officia autem repellat?
+      </p>
+    </div>
+
+    <div style="margin-top: 50px;">
+      <h2 class="frame" style=" margin-left: 10px;">Watch. Learn. And level up.</h2>
+      <p class="frame-p" style=" margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed culpa
+        corporis, minima et amet similique
+        recusandae libero aperiam cupiditate illum!</p>
+    </div>
+
+    <div < data-aos="fade-out" class="text-center">
+      <img class="sky" src="sky-jump.jpg" style="max-width: 100%; width: 70%;" alt="">
+    </div>
+
+    <section class="d-flex justify-content-center flex-column flex-md-row" style="margin-top: 80px;">
+      <div class="d-block text-center">
+        <img src="cube-pic.png" alt="">
+        <p class="frame-pp text-lg-start">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates, ducimus.
+        </p>
+      </div>
+      <div  data-aos="fade-left" class="d-grid text-center">
+        <img src="cube-rotate-pic.jpg" style="max-width: 100%; width: 90%;" alt="">
+        <div>
+          <img src="youself.png" alt="">
+        </div>
+      </div>
+    </section>
+
+    <section class="d-flex flex-column flex-md-row">
+      <div class="d-block text-center mt-5">
+        <img src="game-pic.png" alt="">
+        <p class="frame-pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident, optio?</p>
+      </div>
+      <div class="text-center">
+        <img src="game-ipad.jpg" style="max-width: 100%; width: 80%;" alt="" <div data-aos="fade-left"></div>>
+      </div>
+    </section>
+
+    <div style="margin-top: 50px;">
+      <h2 class="frames" style="max-width: 180px; margin-left: 10px;">Jot for joy. Type with ease.</h2>
+      <p class="frame-pp" style="margin-left: 10px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus
+        nobis veritatis, dolore soluta similique
+        rerum.</p>
+    </div>
+
+    <section class="d-flex justify-content-center align-items-center flex-column flex-md-row mt-5">
+      <div data-aos="fade-right" class="d-block text-center" style=" overflow-clip-margin: content-box;
+    overflow: clip;">
+        <img class="apple-draw" src="apple-pencil-draw (1).jpg" style=" max-width: 100%; width: 70%;" alt="">
+      </div>
+      <div class="d-block">
+        <div class="text-center">
+          <img class="apple-pencil" src="apple-pencil (1).png" alt="">
+        </div>
+        <p class="frame-pp">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis, quisquam? Officia nam
+          placeat eveniet
+          fugiat?</p>
+      </div>
+    </section>
+
+
+    <div  data-aos="zoom-in" class="d-flex justify-content-center align-items-center">
+      <img src="sunny-pic.jpg" style="width: 45%;" alt="">
+      <img src="sunny-half.jpg" style="width: 20%; height: 20%;" alt="">
+    </div>
+
+    <section class="d-flex justify-content-center align-items-center flex-column flex-md-row mt-5">
+      <img src="fallback-pic.jpg" style="max-width: 100%; width: 70%;" alt="" <div data-aos="fade-right"></div>>
+      <div class="d-block fallback-icon" style="margin-left: 20px;">
+        <img src="fallback-icon.png" alt="">
+        <p class="fallbackicon">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam saepe omnis nisi vel
+          dolores aperiam.
+          Saepe consequatur ducimus ea cumque!</p>
+      </div>
+    </section>
+
+
+    <div class="mt-5">
+      <h2 class="frame">Amazing apps? Apps-olutely.</h2>
+      <p style="margin-left: 10px;" class="frame-p">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam,
+        aliquid. Optio nihil nostrum perspiciatis
+        laboriosam enim iure recusandae minus .</p>
+    </div>
+
+    <div  data-aos="zoom-in" class=" mt-5 d-flex align-items-center justify-content-center flex-column flex-md-row me-4">
+      <p style="max-width: 100px; color: gray;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+      <img src="long-ipad.jpg" style="max-width: 100%; width: 60%;" alt="">
+    </div>
+
+
+    <section class="d-flex justify-content-center flex-column flex-md-row gap-3 " style="margin-top: 70px;" <div data-aos="fade-right"></div>
+      <div class="d-block">
+        <img src="line-cube.png" alt="">
+        <h4 style="font-size: 30px; max-width: 280px;">Use AR to view the new iPad.</h4>
+        <p style="max-width: 250px;">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="line d-flex gap-3">
+          <div id="lines" style="background-color: gray;"></div>
+          <div id="line"></div>
+        </div>
+      </div>
+      <img src="ipad-iphone.jpg" style="width: 20%;" id="iphoneIpad" alt="">
+      <img src="change-ipad.jpeg" style="width: 20%;  display: none;" id="ipadchange" alt="">
+    </section>
+
+
+    <section class="container mt-5">
+      <div class="d-flex gap-3">
+        <img src="half-apple.png" alt="">
+        <h2>Environment</h2>
+      </div>
+      <p style="max-width: 500px; color: gray;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non
+        explicabo rerum libero saepe error Odio, non explicabo rerum libero saepe error.</p>
+
+      <div class="d-flex gap-3">
+        <img src="half-apple-lock.png" alt="">
+        <h2>Privacy</h2>
+      </div>
+      <p style="max-width: 500px; color: gray;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non
+        explicabo rerum libero saepe error Odio, non explicabo rerum libero saepe error.</p>
+
+      <div class="d-flex gap-3">
+        <img src="ciclr-guy.png" alt="">
+        <h2>Accessibility</h2>
+      </div>
+      <p style="max-width: 500px; color: gray;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Odio, non
+        explicabo rerum libero saepe error Odio, non explicabo rerum libero saepe error.</p>
+
+    </section>
+  </main>
+
+
+  <!-- this is for animate on scroll -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <!-- this is for animate on scroll -->
+
+
+  <!-- this is for moving letters -->
+</body>
+
+</html>
