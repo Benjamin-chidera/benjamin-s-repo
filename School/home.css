@@ -1,0 +1,209 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: center !important;
+  align-items: center !important;
+  overflow: hidden;
+  background-color: #473e3e;
+  gap: 20px;
+  padding: 10px;
+  position: fixed;
+  width: 100% !important;
+  z-index: 100;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.navbar a:hover {
+  color: rgb(194, 27, 27);
+}
+
+.elibrary:hover {
+  background-color: white;
+}
+
+.swiper-slide img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  max-width: 100%;
+  z-index: 2;
+}
+
+/* this for mobile navbar */
+.sidenav {
+  height: 100vh;
+  width: 0;
+  background-color: #443535;
+  position: fixed;
+  z-index: 100;
+  top: 0;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+  margin-top: 55px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.home-info a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.program-info a{
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+}
+
+.home-info{
+  display: none;
+}
+
+.program-info{
+  display: none;
+}
+
+.show{
+  display: block;
+}
+
+.prog{
+  display: block;
+}
+
+
+.home-mobile{
+  display: none;
+}
+
+.mobile-show{
+  display: block;
+}
+
+
+.program-mobile{
+  display: none;
+}
+
+.program-show{
+  display: block;
+}
+@media (max-width: 946px) {
+  .mobile {
+    display: block !important;
+  }
+
+  .navbar {
+    display: none !important;
+  }
+
+  .home-info{
+    display: none !important;
+  }
+}
+/* this for mobile navbar */
+
+@media (min-width: 1200px) {
+  .navbar {
+    gap: 40px !important;
+  }
+}
+
+@media (max-width: 290px) {
+  .edu {
+    /* max-width: 50px !important; */
+    font-size: 13px !important;
+  }
+}
+
+/* All section */
+@media (max-width: 688px) {
+  .quick {
+    display: block !important;
+    justify-content: left !important;
+  }
+}
+
+@media (max-width: 350px) {
+  .youtube-link {
+    width: 300px !important;
+    max-width: 100%;
+  }
+
+  .stream {
+    font-size: 13px !important;
+    padding: 10px 20px !important;
+  }
+
+  .last {
+    font-size: 13px !important;
+  }
+
+  .watch {
+    font-size: 30px;
+  }
+
+  .matriculation {
+    width: 200px !important;
+    font-size: 30px !important;
+  }
+
+  .footer {
+    height: 500px !important;
+  }
+}
+
+#mobile {
+  align-items: center;
+  background-color: #633b3b !important;
+  padding: 10px;
+  z-index: 1;
+ position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.footer {
+  height: 300px;
+  width: 100%;
+  background-image: url(images/class-img1.jpg);
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+}

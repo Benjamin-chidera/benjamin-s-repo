@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="contact.css">
+  <link rel="stylesheet" href="home.css">
+  <link rel="stylesheet" href="about.css">
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="home.js" defer></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- this is my navbar -->
+  <header>
+    <div class="navbar">
+
+      <div>
+        <a href="home.html">
+          <img src="images/logo.png" alt="">
+        </a>
+      </div>
+
+      <div style="display: flex; gap: 5px; cursor: pointer;">
+        <a onclick="myFunction()" class="home">Home
+          <i class="fa-sharp fa-solid fa-caret-down" style="color: white;"></i>
+        </a>
+
+      </div>
+
+      <a href="admission.html">Admissions</a>
+
+      <div style="display: flex; gap: 5px; cursor: pointer;">
+        <a onclick="myProgram()" class="program">Programs
+          <i class="fa-sharp fa-solid fa-caret-down" style="color: white;"></i>
+        </a>
+      </div>
+
+      <div>
+        <a href="e-library.html" class="elibrary"
+          style=" padding: 5px 20px; border-radius: 20px; border: 1px solid white;">eLibrary</a>
+      </div>
+      <div>
+        <a href="news.html" class="elibrary"
+          style=" padding: 5px 20px; border-radius: 20px; border: 1px solid white;">News</a>
+      </div>
+      <div>
+        <a href="student-portal.html" class="elibrary"
+          style=" padding: 5px 20px; border-radius: 20px; border: 1px solid white;">MyPortal</a>
+      </div>
+      <div>
+        <a href="gallery.html" class="elibrary"
+          style=" padding: 5px 20px; border-radius: 20px; border: 1px solid white;">Gallery</a>
+      </div>
+
+    </div>
+
+    <!-- this is mobile navbar -->
+    <div class="mobile" style="display: none;">
+      <div id="mysidenav" class="sidenav">
+        <a class="closebtn" onclick="closenav()">&times;</a>
+        <div style="display: flex; gap: 5px; align-items: center;">
+          <a style="color: white;" onclick="openHome()" class="myHome">Home
+
+          </a>
+          <i class="fa-sharp fa-solid fa-caret-down" style="color: white;"></i>
+        </div>
+
+        <div id="home-mobile" class="home-mobile">
+          <a href="home.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+          <a href="vc.html">VC's Address</a>
+        </div>
+
+        <a href="admission.html" style="color: white;"">Admissions</a>
+            <div style=" display: flex; gap: 5px; align-items: center;">
+          <a style="color: white;" onclick="programMobile()">Programs
+
+          </a>
+          <i class="fa-sharp fa-solid fa-caret-down" style="color: white;"></i>
+      </div>
+
+      <div id="program-mobile" class="program-mobile">
+        <a href="faculty.html">Faculty</a>
+      </div>
+
+      <div>
+        <a href="e-library.html" class="elibrary-mobile"
+          style=" padding: 5px 20px; border-radius: 20px; border: 1px solid white; width: 150px; margin-left: 20px;">eLibrary</a>
+      </div>
+
+      <div>
+        <a href="news.html" class="elibrary-mobile"
+          style=" padding: 5px 20px; border-radius: 20px; border: 1px solid white; width: 150px; margin-left: 20px; margin-top: 10px;">News</a>
+      </div>
+      <div>
+        <a href="student-portal.html" class="elibrary-mobile"
+          style=" padding: 5px 20px; border-radius: 20px; border: 1px solid white; width: 150px; margin-left: 20px; margin-top: 10px;">MyPortal</a>
+      </div>
+      <div>
+        <a href="gallery.html" class="elibrary-mobile"
+          style=" padding: 5px 20px; border-radius: 20px; border: 1px solid white; width: 150px; margin-left: 20px; margin-top: 10px;">Gallery</a>
+      </div>
+    </div>
+
+
+    <div id="mobile" style="display: flex; align-items: center; justify-content: space-between;">
+      <img style="margin-left: 20px; width: 40%; max-width: 100%;" src="images/logo.png" alt="">
+      <span style="margin-right: 20px;" onclick="opennav()">
+        <i class="fa-solid fa-bars" style="font-size: 30px; color: rgb(231, 214, 214);"></i>
+      </span>
+    </div>
+
+
+    <!-- <div id="main">
+            ...
+          </div> -->
+    </div>
+    <!-- this is mobile navbar -->
+
+  </header>
+  <!-- this is my navbar -->
+
+
+  <main>
+    <!-- this is the home drop-down menu -->
+    <section class="home-info" id="home-info"
+      style=" gap: 10px; background: #473e3e; width: 150px; height: 130px; position: fixed; top: 10%; text-align: center; left: 20%; z-index: 100;">
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="home.html">Home</a>
+        <a id="about" href="about.html">About Us </a>
+        <a id="contact" href="contact.html">Contact Us </a>
+        <a id="vc" href="vc.html">VC's Address </a>
+      </div>
+    </section>
+    <!-- this is the home drop-down menu -->
+
+
+    <!-- this is a drop-down menu for program -->
+    <section class="program-info" id="program-info"
+      style=" gap: 10px; background: #473e3e; width: 150px; height: 50px; position: fixed; top: 10%; text-align: center; left: 40%; z-index: 100;">
+
+      <div style="display: flex; flex-direction: column; gap: 10px;">
+        <a href="faculty.html">Faculty</a>
+      </div>
+    </section>
+    <!-- this is a drop-down menu for program -->
+
+
+
+
+    <section class="about-us">
+      <h1 class="arch" style="text-align: center; padding-top: 100px; font-size: 35px; color: red;"> UNIVERSITY
+        Landmark Education
+      </h1>
+    </section>
+
+
+    <h2 style="margin: 20px;">Pls Address all issues to:</h2>
+
+    <!-- this is for the school address and contact -->
+    <section class="quick"
+      style="display: flex; justify-content: space-evenly; padding: 20px 0; background: #473737; margin-top: 50px; color: rgb(233, 155, 155); flex-wrap: wrap;">
+
+
+
+
+
+      <!-- footer///////////////////////////////// -->
+      <div style="margin-left: 13px;">
+        <p style="max-width: 400px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea perferendis delectus
+          atque, molestiae rerum saepe
+          cumque, inventore blanditiis, quae provident impedit! Sequi voluptatem incidunt impedit necessitatibus dolore
+          corrupti delectus omnis commodi rerum? Sint ex voluptatem, earum eligendi illo dignissimos aliquam error
+          repellendus aliquid. Quidem doloremque incidunt vitae. Animi, harum ipsum ipsum dolor sit amet consectetur
+          adipisicing elit. Ea perferendis delectus atque, molestiae rerum saepe
+          cumque, inventore blanditiis, quae provident impedit! Sequi voluptatem incidunt impedit necessitatibus dolore
+          corrupti delectus omnis commodi rerum? Sint ex voluptatem, earum eligendi illo dignissimos aliquam error
+          repellendus aliquid. Quidem doloremque incidunt vitae. Animi, harum ipsum ipsum dolor sit amet consectetur
+          adipisicing elit. Ea perferendis delectus atque, molestiae rerum saepe
+          cumque, inventore blanditiis, quae provident impedit! Sequi voluptatem incidunt impedit necessitatibus dolore
+          corrupti delectus omnis commodi rerum? Sint ex voluptatem, earum eligendi illo dignissimos aliquam error
+          repellendus aliquid. Quidem doloremque incidunt vitae. Animi, harum ipsum!</p>
+
+        <h3 style="margin-top: 20px;">Address</h3>
+        <p style="margin-top: 20px;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit, enim.</p>
+
+        <h3 style="margin-top: 20px;">Contact</h3>
+        <p style="margin-top: 20px;">07014431183
+        </p>
+
+        <p style="margin-top: 10px;">08017331163
+        </p>
+        <p style="margin-top: 10px;">08017331163
+        </p>
+        <p style="margin-top: 10px;">(760) 653-5391
+        </p>
+
+        <p style="margin-top: 20px;">info@unilandmark.edu
+        </p>
+        <p class="edu">enquiries@unilandmark.edu.ng
+        </p>
+        <p style="padding-bottom: 20px;">For detailed contact visit</p>
+        <a href="" style="text-decoration: none; font-size: 20px; color: rgb(233, 155, 155);">Contact Us Page</a>
+      </div>
+
+      <div style="margin-left: 13px;">
+        <h3>Quick Links</h3>
+        <ol style="margin-left: 13px;">
+          <a href="" style="text-decoration: none; color: rgb(233, 155, 155);">
+            <li style="list-style-type: square; margin-top: 10px;">Home</li>
+            <li style="list-style-type: square; margin-top: 50px;">Fee Schedule</li>
+            <li style="list-style-type: square; margin-top: 50px; max-width: 200px;">Time Table of Events Faculty of
+              Enviroment Science</li>
+            <li style="list-style-type: square; margin-top: 50px;">Faculty of Engineering</li>
+            <li style="list-style-type: square; margin-top: 50px;">Faculty of Natural Science</li>
+            <li style="list-style-type: square; margin-top: 50px;">Faculty of Management Science</li>
+            <li style="list-style-type: square; margin-top: 50px;">News</li>
+            <li style="list-style-type: square; margin-top: 50px;">Call for Admission</li>
+            <li style="list-style-type: square; margin-top: 50px;">Student Portal</li>
+          </a>
+        </ol>
+      </div>
+    </section>
+    <!-- this is for the school address and contact -->
+
+    <footer class="footer">
+      <div style="text-align: center; padding-top: 50px;">
+        <h5 style="font-size: 30px; color: red;">FOLLOW US ON</h5>
+      </div>
+
+      <div style="display: flex; justify-content: center; gap: 30px; flex-wrap: wrap;">
+        <a href="">
+          <i class="fa-brands fa-twitter"
+            style="border: 1px solid white; padding: 10px 10px; font-size: 30px; border-radius: 50%; color: rgb(171, 171, 236);"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-facebook-f"
+            style="border: 1px solid white; padding: 10px 18px; font-size: 30px; border-radius: 50%; color: rgb(72, 72, 199);"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-google-plus-g"
+            style="border: 1px solid white; padding: 10px; font-size: 30px; border-radius: 50%; color: rgb(130, 175, 38);"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-youtube"
+            style="border: 1px solid white; padding: 10px; font-size: 30px; border-radius: 50%; color: red;"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-pinterest-p"
+            style="border: 1px solid red; padding: 10px 15px; font-size: 30px; border-radius: 50%; color: white;"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-tumblr"
+            style="border: 1px solid white; padding: 10px 15px; font-size: 30px; border-radius: 50%; color: purple;"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-instagram"
+            style="border: 1px solid white; padding: 10px 15px; font-size: 30px; border-radius: 50%; color: rgb(251, 57, 88);"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-linkedin-in"
+            style="border: 1px solid white; padding: 10px 15px; font-size: 30px; border-radius: 50%; color: purple;"></i>
+        </a>
+      </div>
+    </footer>
+
+    <section style="text-align: center;">
+      <h5 style="font-size: 30px; margin-top: 20px;">Share</h5>
+      <div style="display: flex; justify-content: center; gap: 20px; margin-top: 20px; flex-wrap: wrap;">
+        <a href="">
+          <i class="fa-brands fa-facebook-f"
+            style="border: 1px solid red; padding: 10px 18px; font-size: 30px; border-radius: 50%; color: rgb(72, 72, 199);"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-twitter"
+            style="border: 1px solid red; padding: 10px 10px; font-size: 30px; border-radius: 50%; color: rgb(171, 171, 236);"></i>
+        </a>
+
+        <a href="">
+          <i class="fa-brands fa-google-plus-g"
+            style="border: 1px solid red; padding: 10px; font-size: 30px; border-radius: 50%; color: rgb(130, 175, 38);"></i>
+        </a>
+
+      </div>
+    </section>
+
+    <section
+      style="text-align: center; background: #493f3f; height: 50px; padding-top: 10px; padding-bottom: 20px; margin-top: 20px; ">
+      <div style="display: flex; justify-content: center; align-items: center; color: rgb(61, 121, 61);">
+        <i class="fa-regular fa-copyright"></i>
+        <h2 class="last" style="font-size: 20px;">UNIVERSITY Landmark Education</h2>
+      </div>
+    </section>
+  </main>
+
+
+
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+  <script src="https://kit.fontawesome.com/3baa2d3eec.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

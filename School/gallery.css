@@ -1,0 +1,43 @@
+.gallery {
+  background-image: url(images/pic1.jpg);
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.521);
+  background-blend-mode: darken;
+}
+
+.btn{
+  background: transparent !important;
+  outline: none !important;
+  border: none !important;
+  padding: 0 !important;
+}
+
+
+.modal-header{
+  border-bottom: none !important;
+  color: white;
+}
+
+.modal-content{
+  background-color: #1d1919 !important;
+}
+
+
+.modal-dialog{
+  margin: auto !important;
+}
+
+
+/* .swiper-button-prev{
+  color: white !important;
+  font-size: 5px !important;
+} */
+
+
+ .btn-close{
+  background-color: white !important;
+ }
