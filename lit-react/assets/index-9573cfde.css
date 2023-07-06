@@ -1,0 +1,1 @@
+.navbar{background:yellow}body{font-family:Roboto,sans-serif}.navbar-brand{font-size:30px;font-weight:600;color:#212196}.nav-link{color:#212196;font-weight:500;font-size:17px}.hero{background:#e0dbdb;padding-bottom:50px}.about{display:flex;overflow-x:scroll;gap:20px}@media (max-width:991px){.about img{width:30%!important}}.cardP{display:flex!important;gap:20px}
